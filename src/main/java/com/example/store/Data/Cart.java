@@ -7,16 +7,13 @@ import org.springframework.web.context.annotation.SessionScope;
 
 import java.util.ArrayList;
 import java.util.List;
-@Component
-@SessionScope
+
+
 public class Cart {
     private List<Integer> items;
 
-
-
-
     public Cart() {
-         items = new ArrayList<Integer>();
+         this.items = new ArrayList<Integer>();
     }
 
     public List<Integer> getItems() {

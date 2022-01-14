@@ -17,7 +17,7 @@ public class CartServiceimpl implements CartService {
     public CartServiceimpl(Cart cart) {
 
         this.cart = cart;
-        System.out.println("корзина создана успешно");
+
     }
 
 
@@ -25,7 +25,6 @@ public class CartServiceimpl implements CartService {
     public void addItem(List<Integer> items) {
         for (Integer item : items) {
             cart.addItems(item);
-
         }
     }
 
