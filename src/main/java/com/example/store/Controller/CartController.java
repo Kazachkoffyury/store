@@ -26,7 +26,7 @@ public class CartController {
 
     }
 
-    @GetMapping("get")
+    @GetMapping("/get")
     public String getItem() {
         return cartService.getItems();
 
